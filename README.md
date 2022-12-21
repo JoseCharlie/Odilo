@@ -4,13 +4,13 @@ Repositorio para el proceso de selección de Odilo
 
 Para levantar la base de datos con docker:
   /docker/postgres #$docker-compose up -d
- De esta manera sólo tenemos que ejecutar el insert del usuario
+ De esta manera sólo tenemos que ejecutar el insert del usuario en el fichero sqll/odilo.sql
  
  Para crear la base de datos a mano:
- ejecutar sql/Odilo.sql 
+ ejecutar sql/odilo.sql 
  
  
- Multitenant
+# Multitenant
 Cconvertir la aplicación en multitenant requeriría establecer diferentes bases de datos para cada tenant.
 Para esto tendríamos diferentes ficheros de configuración por tenant cada uno con los datos de acceso a su BDD. Con estos ficheros podríamos cambiar el dataSource para cada tenant utilizando un método de filtrado por tenant.
 
