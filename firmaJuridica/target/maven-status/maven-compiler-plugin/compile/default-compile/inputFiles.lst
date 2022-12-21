@@ -1,5 +1,13 @@
 C:\Users\jbarnesv\Downloads\epcsd-spring\firmaJuridica\src\main\java\odilo\recruitment\firmaJuridica\controller\ViewController.java
-C:\Users\jbarnesv\Downloads\epcsd-spring\firmaJuridica\src\main\java\odilo\recruitment\firmaJuridica\persistence\CertificadoRepository.java
-C:\Users\jbarnesv\Downloads\epcsd-spring\firmaJuridica\src\main\java\odilo\recruitment\firmaJuridica\persistence\Certificado.java
+C:\Users\jbarnesv\Downloads\epcsd-spring\firmaJuridica\src\main\java\odilo\recruitment\firmaJuridica\service\UsuarioService.java
+C:\Users\jbarnesv\Downloads\epcsd-spring\firmaJuridica\src\main\java\odilo\recruitment\firmaJuridica\service\CertificadoService.java
 C:\Users\jbarnesv\Downloads\epcsd-spring\firmaJuridica\src\main\java\odilo\recruitment\firmaJuridica\FirmaJuridicaApplication.java
+C:\Users\jbarnesv\Downloads\epcsd-spring\firmaJuridica\src\main\java\odilo\recruitment\firmaJuridica\controller\FirmaController.java
+C:\Users\jbarnesv\Downloads\epcsd-spring\firmaJuridica\src\main\java\odilo\recruitment\firmaJuridica\persistence\entities\Certificado.java
+C:\Users\jbarnesv\Downloads\epcsd-spring\firmaJuridica\src\main\java\odilo\recruitment\firmaJuridica\persistence\entities\Usuario.java
+C:\Users\jbarnesv\Downloads\epcsd-spring\firmaJuridica\src\main\java\odilo\recruitment\firmaJuridica\persistence\repositories\CertificadoRepository.java
+C:\Users\jbarnesv\Downloads\epcsd-spring\firmaJuridica\src\main\java\odilo\recruitment\firmaJuridica\security\InterfaceAuthentication.java
+C:\Users\jbarnesv\Downloads\epcsd-spring\firmaJuridica\src\main\java\odilo\recruitment\firmaJuridica\security\AuthenticationFacade.java
+C:\Users\jbarnesv\Downloads\epcsd-spring\firmaJuridica\src\main\java\odilo\recruitment\firmaJuridica\controller\CertificadoController.java
+C:\Users\jbarnesv\Downloads\epcsd-spring\firmaJuridica\src\main\java\odilo\recruitment\firmaJuridica\persistence\repositories\UsuarioRepository.java
 C:\Users\jbarnesv\Downloads\epcsd-spring\firmaJuridica\src\main\java\odilo\recruitment\firmaJuridica\security\WebSecurityConfig.java

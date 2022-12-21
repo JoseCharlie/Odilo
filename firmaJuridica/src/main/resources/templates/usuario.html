@@ -2,10 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
       xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
 <head>
-    <title>Hello World!</title>
+    <title>Bienvenido!</title>
 </head>
 <body>
-<h1 th:inline="text">Hello <span th:remove="tag" sec:authentication="name">thymeleaf</span>!</h1>
+<h1 th:inline="text">Hola <span sec:authentication="username"></span>!</h1>
+
+<form th:action="@{/firma}" method="post" >
+    <table>
+        <tr><td>Firmar un certificado</td><td><input type="text" name="firma" /></td>
+            <td><input type="submit" value="Firmar" /></td></tr>
+    </table>
+</form>
+<form th:action="@{/certificado}" method="post" enctype="multipart/form-data" action="/" >
+    <table>
+        <tr><td>Subir una certificado nuevo</td><td><input type="file" name="certificado" /></td>
+            <td><input type="submit" value="Subir" /></td></tr>
+    </table>
+</form>
 <form th:action="@{/logout}" method="post">
     <input type="submit" value="Sign Out"/>
 </form>

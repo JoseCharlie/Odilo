@@ -1,5 +1,13 @@
 odilo\recruitment\firmaJuridica\controller\ViewController.class
 odilo\recruitment\firmaJuridica\FirmaJuridicaApplication.class
+odilo\recruitment\firmaJuridica\controller\CertificadoController.class
+odilo\recruitment\firmaJuridica\persistence\entities\Certificado.class
+odilo\recruitment\firmaJuridica\persistence\repositories\CertificadoRepository.class
+odilo\recruitment\firmaJuridica\security\AuthenticationFacade.class
 odilo\recruitment\firmaJuridica\security\WebSecurityConfig.class
-odilo\recruitment\firmaJuridica\persistence\Certificado.class
-odilo\recruitment\firmaJuridica\persistence\CertificadoRepository.class
+odilo\recruitment\firmaJuridica\service\CertificadoService.class
+odilo\recruitment\firmaJuridica\persistence\entities\Usuario.class
+odilo\recruitment\firmaJuridica\security\InterfaceAuthentication.class
+odilo\recruitment\firmaJuridica\persistence\repositories\UsuarioRepository.class
+odilo\recruitment\firmaJuridica\service\UsuarioService.class
+odilo\recruitment\firmaJuridica\controller\FirmaController.class
