@@ -19,7 +19,6 @@ _________________________
 Para recuperar contexto:
 
 public class TenantContext {
-
     private static final ThreadLocal<String> CURRENT_TENANT = new ThreadLocal<>();
 
     public static String getCurrentTenant() {
@@ -36,7 +35,6 @@ Filtro:
 @Component
 @Order(1)
 class TenantFilter implements Filter {
-
     @Override
     public void doFilter(ServletRequest request, ServletResponse response,
       FilterChain chain) throws IOException, ServletException {
@@ -57,7 +55,6 @@ ______________________
 Cambia el DataSource:
 
 public class MultitenantDataSource extends AbstractRoutingDataSource {
-
     @Override
     protected String determineCurrentLookupKey() {
         return TenantContext.getCurrentTenant();
@@ -68,7 +65,6 @@ Configuración multi DataSource:
 
 @Configuration
 public class MultitenantConfiguration {
-
     @Value("${defaultTenant}")
     private String defaultTenant;
 
