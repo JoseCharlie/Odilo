@@ -18,7 +18,8 @@ Ejemplo de las clases necesarias:
 _________________________
 Para recuperar contexto:
 
-public class TenantContext {
+public class TenantContext 
+{
     private static final ThreadLocal<String> CURRENT_TENANT = new ThreadLocal<>();
 
     public static String getCurrentTenant() {
