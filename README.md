@@ -17,7 +17,7 @@ Para esto tendríamos diferentes ficheros de configuración por tenant cada uno 
 Ejemplo de las clases necesarias:
 _________________________
 Para recuperar contexto:
-#########################
+
 public class TenantContext {
 
     private static final ThreadLocal<String> CURRENT_TENANT = new ThreadLocal<>();
@@ -32,7 +32,7 @@ public class TenantContext {
 }
 ________
 Filtro:
-########
+
 @Component
 @Order(1)
 class TenantFilter implements Filter {
@@ -55,7 +55,7 @@ class TenantFilter implements Filter {
 }
 ______________________
 Cambia el DataSource:
-######################
+
 public class MultitenantDataSource extends AbstractRoutingDataSource {
 
     @Override
@@ -65,7 +65,7 @@ public class MultitenantDataSource extends AbstractRoutingDataSource {
 }
 ________________________________
 Configuración multi DataSource:
-################################
+
 @Configuration
 public class MultitenantConfiguration {
 
