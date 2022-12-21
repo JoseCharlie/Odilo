@@ -39,7 +39,7 @@ public class WebSecurityConfig {
     }
 
     /**
-     * Recuperar user de BDD y
+     * Por el momento sólo hay un usuario en memoria
      * @return
      */
     @Bean

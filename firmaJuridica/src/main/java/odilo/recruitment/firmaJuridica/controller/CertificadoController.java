@@ -2,7 +2,6 @@ package odilo.recruitment.firmaJuridica.controller;
 
 import lombok.RequiredArgsConstructor;
 import odilo.recruitment.firmaJuridica.FirmaJuridicaApplication;
-import odilo.recruitment.firmaJuridica.persistence.entities.Certificado;
 import odilo.recruitment.firmaJuridica.persistence.entities.Usuario;
 import odilo.recruitment.firmaJuridica.security.InterfaceAuthentication;
 import odilo.recruitment.firmaJuridica.service.CertificadoService;
@@ -11,7 +10,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -25,12 +23,16 @@ public class CertificadoController {
 
     private final CertificadoService serviceCertificado;
     private final UsuarioService serviceUsuario;
-    private static final Logger log = LoggerFactory.getLogger(FirmaJuridicaApplication.class);
 
     @Autowired
     private InterfaceAuthentication authenticationFacade;
 
-
+    /**
+     * Método POST para cubir un nuevo certificado a la base
+     * @param certificado
+     * @return mensaje de éxito
+     * @throws IOException
+     */
     @PostMapping()
     @ResponseStatus(HttpStatus.OK)
     public String subirCertificado(@RequestParam("certificado") MultipartFile certificado) throws IOException {
